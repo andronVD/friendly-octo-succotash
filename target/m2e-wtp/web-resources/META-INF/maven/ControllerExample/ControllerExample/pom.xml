@@ -68,4 +68,22 @@
 		    <version>3.5</version>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>openshift</id>
+			<build>
+				<finalName>ControllerExample</finalName>
+				<plugins>
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>3.0.0</version>
+						<configuration>
+							<outputDirectory>deployments</outputDirectory>
+							<warName>ROOT</warName>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
