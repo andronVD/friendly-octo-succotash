@@ -12,7 +12,7 @@
 	</properties>
 	
 	<build>
-		<finalName>ControllerExample</finalName>
+		<finalName>TrunkSchedule</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
