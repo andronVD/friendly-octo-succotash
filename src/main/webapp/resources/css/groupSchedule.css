@@ -1,0 +1,49 @@
+html {
+	/*overflow:  hidden;*/
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00A0C6;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#facultyButtonList {
+	display: none;
+}
+
+#preloader {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	background: #C5EFF7
+		url(http://hello-site.ru//main/images/preloads/bars.svg) center center
+		no-repeat;
+	background-size: 41px;
+}
+
+.buttonCustomDirClass {
+ background-color:white;
+ color:#d9534f;
+ border-color: #b2b2b2
+}
+
+.buttonCustomInfoClass {
+ background-color:white;
+ color:#3fc04f;
+}
+
+.buttonCustomWarningClass {
+ background-color:white;
+ color:#ec971f;
+}
