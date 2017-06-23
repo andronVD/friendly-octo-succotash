@@ -3,7 +3,7 @@
 <c:set var="contextPath" scope="request">${pageContext.request.contextPath}</c:set>
 <br>
 <c:forEach var="itemDir" items="${faculty.directionList}">
-	<button type="button" class="btn btn-lg btn-default" style="background-color:#b2b2b2;border:#b2b2b2" onclick="directionQuery(this)" 
+	<button type="button" class="btn btn-lg btn-default" style="background-color:#b2b2b2;border:#b2b2b2;margin-right:0.5%;margin-top:0.5%" onclick="directionQuery(this)" 
 		value="${itemDir.id}">${itemDir.fullName}</button>
 		
 </c:forEach>

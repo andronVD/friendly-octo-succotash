@@ -10,8 +10,6 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="http://getbootstrap.com/favicon.ico">
-
 <title>IndexSchedule</title>
 
 <!-- Bootstrap core CSS -->
@@ -20,11 +18,31 @@
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="${contextPath}/resources/css/index.css">
+<style type="text/css">
+	body{
+		background: #333;
+	}
+	#preloader {
+		display: block;
+		position: fixed;
+		z-index: 99999;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		min-width: 1000px;
+		background: #333
+			url(http://hello-site.ru//main/images/preloads/bars.svg) center center
+			no-repeat;
+		background-size: 41px;
+	}
+</style>
 </head>
 
 <body>
+	
 	<a href="groupSchedule.html">Click here to See scheduleee
-		Message... </a>
+			Message... </a>
 	<div id="preloader"></div>
 	<script type="text/javascript">
 	var preloader = document.getElementById("preloader");
@@ -42,6 +60,7 @@
 		setTimeout(function() {
 			fadeOutnojquery(preloader);
 		}, 1000);
-	};</script>
+	};
+	</script>
 </body>
 </html>

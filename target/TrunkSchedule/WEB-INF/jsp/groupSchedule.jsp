@@ -39,7 +39,7 @@
 			<div class="masthead clearfix" style="width:100%;background:#333;opacity:0.8">
 				<div class="container inner" style="background:#333;opacity:0.8">
 					<h3 class="masthead-brand" id="nure">
-						<a href="#home"><b>NURE</b></a>
+						<a href="#home" onclick="clearAfterRefHome()"><b>NURE</b></a>
 					</h3>
 					<nav>
 						<ul class="nav masthead-nav">
@@ -61,37 +61,18 @@
 						id="startButton">Let's get started!</button>
 				</p>
 			</div>	</div></div>
-			<!-- <header class="w3-display-container w3-content w3-wide"
-		style="max-width: 70%;" id="home">
-		<img class="w3-image" alt="Architecture" width="80%" height="80%">
-		<div class="w3-display-middle w3-margin-top w3-center"
-			id="stickyNavbar">
-			<h1 class="w3-xxlarge w3-text-white">
-				<span class="w3-padding w3-black w3-opacity-min" id="nure"> <a
-					href="#home"><b>NURE</b></a>
-				</span> <span class="w3-hide-small w3-text-light-grey"
-					style="margin-left: 15px;" id="scheduleSpan">Schedule</span>
-			</h1>
-		</div>
-	</header> -->
-
-
-			<!-- <button type="button"
-		class="btn btn-info w3-display-middle w3-margin-top"
-		id="startButton">Let's get started!</button> -->
 
 			<div class="site-wrapper">
-			
 			<div id="facultyButtonList" style="height:100%; margin-left:2%;padding-top:5%">
 				<h3 class="w3-padding-16">Projects</h3>
 				<div>
 					<c:forEach var="item" items="${university.facultyList}">
-						<button type="button" class="btn btn-lg btn-default"
+						<button type="button" class="btn btn-lg btn-default" style="margin-right:0.5%;margin-top:0.5%"
 							onclick="facultyQuery(this)" value="${item.id}">${item.shortName}</button>
 					</c:forEach>
 				</div>
 				<div id="directionList"></div>
-			</div	>
+			</div>
 	</div>
 	
 	<script src="${contextPath}/resources/js/groupSchedule.js"></script>
