@@ -2,14 +2,10 @@ $(document).ready(function() {$('#startButton').on('click',function(event) {
 			$('#facultyButtonList').css('display', 'block');
 			$('html,body').animate({scrollTop : $("#facultyButtonList").offset().top}, 800);
 	});
-$('#home').on('click',function(event) {
-	$('#facultyButtonList').empty();
-});
 });
 function clearAfterRefHome() {
-	$('#home').on('click',function(event) {
-		$('#facultyButtonList').empty();
-	});
+	$('#facultyButtonList').css('display', 'none');
+	$('html,body').animate({scrollTop : -$("#home").offset().top}, 800);
 }
 function facultyQuery(elem) { 
 	$('#facultyButtonList button').removeClass('active');
