@@ -3,11 +3,12 @@ $(document).ready(function() {$('#startButton').on('click',function(event) {
 			$('html,body').animate({scrollTop : $("#facultyButtonList").offset().top}, 800);
 	});
 });
+
 function clearAfterRefHome() {
 	$('#facultyButtonList').css('display', 'none');
-	$('html,body').animate({scrollTop : -$("#home").offset().top}, 800);
 }
-function facultyQuery(elem) { 
+
+function facultyQuery(elem) {
 	$('#facultyButtonList button').removeClass('active');
 	$(elem).addClass('active');
 	var data = {

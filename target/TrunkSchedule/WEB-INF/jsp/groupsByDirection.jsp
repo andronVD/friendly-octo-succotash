@@ -10,7 +10,7 @@
 		style="background-color: #818181; border: #818181; margin-right: 0.5%; margin-top: 0.5%"
 		value="${itemGroup.id}" onclick="selectedGroup(this)">${itemGroup.name}</button>
 </c:forEach>
-<div class="container" style="margin-top:1%;margin-left:40%">
+<div class="container" style="margin-top: 1%; margin-left: 40%">
 	<div class="col-sm-2">
 		<div class="form-group">
 			<div class="input-group date" id="datetimepickerStartDate">
@@ -43,7 +43,6 @@
 		$('#groupList button').removeClass('active');
 		$(elem).addClass('active');
 		console.log('idGroup: ' + $('#idGroup').val());
-
 		var data = {
 			idGroup : $('#idGroup').val(),
 			startDate : $('#startDate').val(),
